@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         ),
         routes:{
           "/" :(context) = HomePage(),
-        },
+        },//routes
       ); // matrial app
   }
 }
