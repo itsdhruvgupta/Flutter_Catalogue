@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: HomePage(),
         themeMode: ThemeMode.light,
-        theme: ThemeData(primarySwatch: Colors.royalBlue),
+        theme: ThemeData(primarySwatch: Colors.Blue),
         darkTheme: ThemeData(
           brightness: Brightness.dark,
         )); // matrial app
