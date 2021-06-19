@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       routes: {
-        "/": (context) => HomePage(),
+        "/": (context) => LoginPage(),
       }, //routes
     ); // matrial app
   }
