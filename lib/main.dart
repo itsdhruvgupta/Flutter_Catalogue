@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      initialRoute: "login",
+      initialRoute: "/",
       routes: {
-        "/": (context) => HomePage(),
-        "login": (context) => LoginPage(),
+        "/": (context) => LoginPage(),
+        "/login": (context) => LoginPage(),
       }, //routes
     ); // matrial app
   }
