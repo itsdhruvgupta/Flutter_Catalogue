@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 22.0,
+            height: 30.0,
           ), //box
           Image.asset(
             "assets/images/login.png",
