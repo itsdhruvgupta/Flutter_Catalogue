@@ -9,6 +9,11 @@ class LoginPage extends StatelessWidget {
           "assets/images/login.png",
           fit: BoxFit.cover,
         ),
+        Text("Welcome",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ))
       ]),
     ); //matarial
   }
