@@ -3,10 +3,10 @@ import 'routes.dart';
 
 class LoginPage extends StatefulWidget {
   @override
-  _LoginpageState createState() => _LoginpageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _LoginpageState extends State<Loginpage> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
