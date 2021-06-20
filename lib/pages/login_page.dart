@@ -8,13 +8,15 @@ class LoginPage extends StatelessWidget {
         Image.asset(
           "assets/images/login.png",
           fit: BoxFit.cover,
-        ),
+        ),//children - image
         Text("Welcome",
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-            ))
-      ]),
+            )//style
+          )//text
+      ]//column
+      ),//childern
     ); //matarial
   }
 }
