@@ -5,6 +5,9 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Column(children: [
+        SizedBox(
+          height : 20.0,
+        )
         Image.asset(
           "assets/images/login.png",
           fit: BoxFit.cover,
