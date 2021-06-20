@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -52,7 +51,7 @@ class LoginPage extends StatelessWidget {
                       child: Text("Login"),
                       style: TextButton.styleFrom(minimumSize: Size(100, 50)),
                       onPressed: () {
-                        // Navigator.pushNamed(context, MyRoutes.homeRoute);
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
                       }), //button
                 ], //children
               ), //column
