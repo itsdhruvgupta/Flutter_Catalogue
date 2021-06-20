@@ -33,7 +33,7 @@ class LoginPage extends StatelessWidget {
               suffix: Text('Suffix'),
               border: OutlineInputBorder(),
             ),
-          );
+          ),
         ], //column
       ), //childern
     ); //matarial
