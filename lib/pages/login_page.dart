@@ -5,7 +5,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Column(children: [
-        Image.asset("login.png")
+        Image.asset("assets/images/login.png")
       ]),
     ); //matarial
   }
