@@ -25,15 +25,17 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               height: 22.0,
             ), //box
-            Text("Welcome $name",
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ), //style
-                onChanged: (value) {
-              name = values;
-              setState(() {});
-            }), //text
+            Text(
+              "Welcome $name",
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ), //style
+              onChanged: (value) {
+                name = values;
+                setState(() {});
+              },
+            ), //text
             SizedBox(
               height: 22.0,
             ), //box
