@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'routes.dart';
 
-class Loginpage extends StatefulWidget {
+class LoginPage extends StatefulWidget {
   @override
   _LoginpageState createState() => _LoginpageState();
 }
