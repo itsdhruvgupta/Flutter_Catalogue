@@ -28,8 +28,8 @@ class LoginPage extends StatelessWidget {
           ), //box
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-            child: Container(
-              childern: [
+            child: Column(
+              childern: <Widget>[
                 TextFormField(
                   decoration: const InputDecoration(
                     hintText: "Enter User Name",
