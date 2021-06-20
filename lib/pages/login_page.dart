@@ -29,7 +29,7 @@ class LoginPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
             child: Column(
-              childern: <Widget>[
+              children: [
                 TextFormField(
                   decoration: const InputDecoration(
                     hintText: "Enter User Name",
