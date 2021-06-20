@@ -29,9 +29,7 @@ class LoginPage extends StatelessWidget {
           TextFormField(
             initialValue: 'abc',
             decoration: const InputDecoration(
-              prefix: Text('Prefix'),
-              suffix: Text('Suffix'),
-              border: OutlineInputBorder(),
+              hintText : "Enter User Name",
             ),
           ),
         ], //column
