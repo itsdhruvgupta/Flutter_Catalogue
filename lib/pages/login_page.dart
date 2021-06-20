@@ -6,12 +6,15 @@ class LoginPage extends StatelessWidget {
     return Material(
       child: Column(children: [
         SizedBox(
-          height: 20.0,
-        ),
+          height: 22.0,
+        ), //box
         Image.asset(
           "assets/images/login.png",
           fit: BoxFit.cover,
         ), //children - image
+        SizedBox(
+          height: 22.0,
+        ), //box
         Text("Welcome",
             style: TextStyle(
               fontSize: 20,
