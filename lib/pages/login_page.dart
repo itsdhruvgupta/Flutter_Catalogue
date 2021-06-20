@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
                       labelText: " User Name ",
                     ), //decoration
                     onChanged: (value) {
-                      name = values;
+                      name = value;
                       setState(() {});
                     },
                   ), //textfield
