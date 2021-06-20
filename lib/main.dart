@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
-        "/login": (context) => LoginPage(),
+        "/login": (context) => HomePage(),
       }, //routes
     ); // matrial app
   }
