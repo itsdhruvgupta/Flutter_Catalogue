@@ -30,7 +30,7 @@ class LoginPage extends StatelessWidget {
             hintText: " Enter User Name",
           ),
         ),
-      ] //column
+      ], //column
           ), //childern
     ); //matarial
   }
