@@ -34,7 +34,7 @@ class LoginPage extends StatelessWidget {
           TextFormField(
             DecoratedBox(
               hintText: "Enter User Name",
-            ),
+            )
           ),
         ], //column
       ), //childern
