@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'pages/routes.dart';
+import 'utils/routes.dart';
 
 // just to try the git and vcs
 void main() {
