@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'fluttercatalogue/lib/utiles/routes.dart';
+import './utiles/routes.dart';
 
 class LoginPage extends StatelessWidget {
   @override
