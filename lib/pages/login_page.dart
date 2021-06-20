@@ -17,12 +17,21 @@ class LoginPage extends StatelessWidget {
         ), //box
         Text("Welcome",
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 22,
               fontWeight: FontWeight.bold,
             ) //style
-            ) //text
+        ) //text
+        SizedBox(
+          height: 22.0,
+        ), //box
+        TextFormField(
+          decoration : InputDecoration(
+            lableText : "User Name",
+            hintText : " Enter User Name",
+          )
+        )
       ] //column
-          ), //childern
+      ), //childern
     ); //matarial
   }
 }
