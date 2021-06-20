@@ -31,6 +31,11 @@ class LoginPage extends StatelessWidget {
               hintText: "Enter User Name",
               labelText: " User Name ",
             ),
+            TextFormField(
+            decoration: const InputDecoration(
+              hintText: "Enter Password",
+              labelText: " Password ",
+            ),
           ),
         ], //column
       ), //childern
