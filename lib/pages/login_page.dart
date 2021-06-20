@@ -27,10 +27,13 @@ class LoginPage extends StatelessWidget {
             height: 22.0,
           ), //box
           TextFormField(
-            decoration: const InputDecoration(lableText: "User Name",
-              hintText: " Enter User Name",
+            initialValue: 'abc',
+            decoration: const InputDecoration(
+              prefix: Text('Prefix'),
+              suffix: Text('Suffix'),
+              border: OutlineInputBorder(),
             ),
-          ),
+          );
         ], //column
       ), //childern
     ); //matarial
