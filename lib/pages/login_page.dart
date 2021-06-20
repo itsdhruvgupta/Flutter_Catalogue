@@ -29,6 +29,7 @@ class LoginPage extends StatelessWidget {
           TextFormField(
             decoration: const InputDecoration(
               hintText: "Enter User Name",
+              labelText: " User Name ",
             ),
           ),
         ], //column
