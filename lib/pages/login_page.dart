@@ -6,20 +6,20 @@ class LoginPage extends StatelessWidget {
     return Material(
       child: Column(children: [
         SizedBox(
-          height : 20.0,
-        )
+          height: 20.0,
+        ),
         Image.asset(
           "assets/images/login.png",
           fit: BoxFit.cover,
-        ),//children - image
+        ), //children - image
         Text("Welcome",
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-            )//style
-          )//text
-      ]//column
-      ),//childern
+            ) //style
+            ) //text
+      ] //column
+          ), //childern
     ); //matarial
   }
 }
