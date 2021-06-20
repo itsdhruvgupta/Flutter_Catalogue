@@ -28,8 +28,8 @@ class LoginPage extends StatelessWidget {
           decoration : InputDecoration(
             lableText : "User Name",
             hintText : " Enter User Name",
-          )
-        )
+          ),
+        ),
       ] //column
       ), //childern
     ); //matarial
