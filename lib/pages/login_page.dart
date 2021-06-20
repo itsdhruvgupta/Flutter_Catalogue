@@ -31,10 +31,6 @@ class _LoginPageState extends State<LoginPage> {
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
               ), //style
-              onChanged: (value) {
-                name = values;
-                setState(() {});
-              },
             ), //text
             SizedBox(
               height: 22.0,
@@ -48,6 +44,10 @@ class _LoginPageState extends State<LoginPage> {
                       hintText: "Enter User Name",
                       labelText: " User Name ",
                     ), //decoration
+                    onChanged: (value) {
+                      name = values;
+                      setState(() {});
+                    },
                   ), //textfield
                   TextFormField(
                     obscureText: true,
