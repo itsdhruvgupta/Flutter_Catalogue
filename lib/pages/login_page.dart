@@ -13,6 +13,7 @@ class LoginPage extends StatelessWidget {
             Image.asset(
               "assets/images/login.png",
               fit: BoxFit.cover,
+              height: 500,
             ), //children - image
             SizedBox(
               height: 22.0,
@@ -58,7 +59,7 @@ class LoginPage extends StatelessWidget {
             ), //padding
           ], //column
         ), //childern
-      ),//scrollview
+      ), //scrollview
     ); //matarial
   }
 }
