@@ -26,16 +26,21 @@ class LoginPage extends StatelessWidget {
           SizedBox(
             height: 22.0,
           ), //box
-          TextFormField(
-            decoration: const InputDecoration(
-              hintText: "Enter User Name",
-              labelText: " User Name ",
-            ),
-          ),
-          TextFormField(
-            decoration: const InputDecoration(
-              hintText: "Enter Password",
-              labelText: " Password ",
+          Padding(
+            const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+            child: column(
+              TextFormField(
+                decoration: const InputDecoration(
+                  hintText: "Enter User Name",
+                  labelText: " User Name ",
+                ),
+              ),
+              TextFormField(
+                decoration: const InputDecoration(
+                  hintText: "Enter Password",
+                  labelText: " Password ",
+                ),
+              ),
             ),
           ),
         ], //column
