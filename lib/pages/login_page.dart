@@ -49,7 +49,7 @@ class LoginPage extends StatelessWidget {
                   ), //box
                   ElevatedButton(
                       child: Text("Login"),
-                      style: TextButton.styleFrom(minimumSize: Size.fromWidth(100)),
+                      style: TextButton.styleFrom(minimumSize: Size.fromWidth(200)),
                       onPressed: () {
                         print("hii dhruv");
                       }), //button
