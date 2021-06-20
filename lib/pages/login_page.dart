@@ -7,6 +7,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  String name = "";
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -23,13 +25,15 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               height: 22.0,
             ), //box
-            Text(
-              "Welcome",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ), //style
-            ), //text
+            Text("Welcome $name",
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ), //style
+                onChanged: (value) {
+              name = values;
+              setState(() {});
+            }), //text
             SizedBox(
               height: 22.0,
             ), //box
