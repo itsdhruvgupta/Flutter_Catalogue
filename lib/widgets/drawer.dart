@@ -28,9 +28,9 @@ class MyDrawer extends StatelessWidget {
               ),
               title: Text(
                 "Home",
+                textScaleFactor: 1.5,
                 style: TextStyle(
                   color: Colors.white,
-                  textScaleFactor: 1.5,
                 ),
               ),
             ),
