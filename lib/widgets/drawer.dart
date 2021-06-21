@@ -5,22 +5,25 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: ListView(
-        children: [
-          DrawerHeader(
-            padding: EdgeInsets.all(0),
-            child: UserAccountsDrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.deepPurple,
-              ),
-              accountName: Text("Dhruv"),
-              accountEmail: Text("dhruvg304@"),
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage(imageUrl),
+      child: Container(
+        child: ListView(
+          children: [
+            DrawerHeader(
+              padding: EdgeInsets.all(0),
+              child: UserAccountsDrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple,
+                ),
+                accountName: Text("Dhruv"),
+                accountEmail: Text("dhruvg304@"),
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: NetworkImage(imageUrl),
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
+        color: Colors.deepPurple,
       ),
     );
   }
