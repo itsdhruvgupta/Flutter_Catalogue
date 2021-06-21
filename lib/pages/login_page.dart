@@ -62,10 +62,10 @@ class _LoginPageState extends State<LoginPage> {
                   ), //box
 
                   Material(
-                    color : Colors.deepPurple,
+                    color: Colors.deepPurple,
                     borderRadius: BorderRadius.circular(
-                            (changeButton ? 50 : 8),
-                          ),
+                      (changeButton ? 50 : 8),
+                    ),
                     child: InkWell(
                       onTap: () async {
                         setState(() {
@@ -94,7 +94,6 @@ class _LoginPageState extends State<LoginPage> {
                                   fontSize: 18,
                                 ),
                               ),
-                        ),
                       ),
                     ),
                   ),
