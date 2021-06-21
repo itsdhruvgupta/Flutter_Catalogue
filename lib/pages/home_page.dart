@@ -6,11 +6,11 @@ class HomePage extends StatelessWidget {
     int days = 30;
     return Scaffold(
       appBar: AppBar(
-        title: Text(" Dhruv "),
+        title: Text("Dhruv"),
       ),
       body: Center(
         child: Container(
-          child: Text("wellcome home  $days"),
+          child: Text("wellcome Dhruv home  $days"),
         ), //container
       ), //center
       drawer: Drawer(),
