@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                     child: AnimatedContainer(
                       duration: Duration(
-                        seconds: 0.5,
+                        seconds: 5,
                       ),
                       width: changeButton ? 50 : 100,
                       height: 50,
