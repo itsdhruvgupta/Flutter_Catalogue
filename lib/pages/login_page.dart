@@ -14,11 +14,13 @@ class _LoginPageState extends State<LoginPage> {
 
   //method to go to home
   moveToHome(BuildContext context) async {
-    setState(() {
-      changeButton = true;
-    });
-    await Future.delayed(Duration(seconds: 1));
-    Navigator.pushNamed(context, MyRoutes.homeRoute);
+    if (_formKey.currentState.validate()) {
+      setState(() {
+        changeButton = true;
+      });
+      await Future.delayed(Duration(seconds: 1));
+      Navigator.pushNamed(context, MyRoutes.homeRoute);
+    }
   }
 
   @override
