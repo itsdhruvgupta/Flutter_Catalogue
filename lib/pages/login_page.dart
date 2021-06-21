@@ -62,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                   ), //box
 
                   InkWell(
-                    onTap: () {
+                    onTap: () async {
                       setState(() {
                         changeButton = true;
                       });
