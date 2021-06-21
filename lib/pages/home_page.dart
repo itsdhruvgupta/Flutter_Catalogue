@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
           child: Text("wellcome Dhruv home  $days"),
         ), //container
       ), //center
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     ); //scaffold
   }
 }
