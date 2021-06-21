@@ -81,9 +81,6 @@ class _LoginPageState extends State<LoginPage> {
                         duration: Duration(
                           seconds: 1,
                         ),
-                        borderRadius: BorderRadius.circular(
-                          8,
-                        ),
                         width: changeButton ? 50 : 100,
                         height: 50,
                         alignment: Alignment.center,
