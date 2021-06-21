@@ -7,17 +7,17 @@ class MyDrawer extends StatelessWidget {
       child: ListView(
         childern: [
           DrawerHeader(
-                                  decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                  ),
-                                  child: Text(
-                                      'Drawer Header',
-                                      style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 24,
-                                      ),
-                                  ),
-                              ),
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: Text(
+              'Drawer Header',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+              ),
+            ),
+          ),
         ],
       ),
     );
