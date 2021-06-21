@@ -5,17 +5,11 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: [
+        childern: [
           DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Text(
-              'Drawer Header',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
+            child: UserAccountsDrawerHeader(
+              accountName: Text("Dhruv"),
+              accountEmail: Text("dhruvg304@"),
             ),
           ),
         ],
