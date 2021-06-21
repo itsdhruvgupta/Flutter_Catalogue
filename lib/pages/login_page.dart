@@ -58,6 +58,15 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: "Enter User Name",
                         labelText: " User Name ",
                       ), //decoration
+                      validator: (value) {
+                        if (value.isEmpty) {
+                          return "Plese Enter The Username";
+                        }
+                        if (value.contains(" ")) {
+                          return "User name should not contain any space";
+                        }
+                        return null;
+                      },
                       onChanged: (value) {
                         name = value;
                         setState(() {});
