@@ -21,6 +21,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
+            child : Devider(),
           ],
         ),
         color: Colors.deepPurple,
