@@ -26,8 +26,7 @@ class MyDrawer extends StatelessWidget {
                 Icons.home,
                 color: Colors.white,
               ),
-              title: Title(
-                "Home",
+              title: Text(
                 color: Colors.white,
               ),
             ),
