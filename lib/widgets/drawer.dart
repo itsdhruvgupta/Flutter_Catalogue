@@ -30,6 +30,7 @@ class MyDrawer extends StatelessWidget {
                 "Home",
                 style: TextStyle(
                   color: Colors.white,
+                  textScaleFactor: 1.5,
                 ),
               ),
             ),
