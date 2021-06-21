@@ -28,7 +28,20 @@ class MyDrawer extends StatelessWidget {
               ),
               title: Text(
                 "Home",
-                textScaleFactor: 1.5,
+                textScaleFactor: 1.3,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.check_circle,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Proflie",
+                textScaleFactor: 1.3,
                 style: TextStyle(
                   color: Colors.white,
                 ),
