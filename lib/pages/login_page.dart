@@ -65,6 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                     width: 100,
                     height: 50,
                     alignment: Alignment.center,
+                    borderRadius: BorderRadius.circular(18),
                     child: Text(
                       "Login",
                       style: TextStyle(
