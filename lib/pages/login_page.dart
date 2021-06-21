@@ -73,9 +73,9 @@ class _LoginPageState extends State<LoginPage> {
                         fontSize: 18,
                       ),
                     ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
+                    // decoration: BoxDecoration(
+                    //   borderRadius: BorderRadius.circular(18),
+                    // ),
                   )
 
                   // ElevatedButton(
