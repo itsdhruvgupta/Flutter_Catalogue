@@ -22,7 +22,6 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             const Divider(
-              height: 20,
               thickness: 5,
             ),
           ],
