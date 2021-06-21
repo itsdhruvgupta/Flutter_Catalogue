@@ -73,9 +73,14 @@ class _LoginPageState extends State<LoginPage> {
                         });
                         await Future.delayed(Duration(seconds: 1));
                         Navigator.pushNamed(context, MyRoutes.homeRoute);
-                        setState(() {
-                          changeButton = false;
-                        });
+                        setState(
+                          () {
+                            changeButton = false;
+                          },
+                          borderRadius: BorderRadius.circular(
+                            8,
+                          ),
+                        );
                       },
                       child: AnimatedContainer(
                         duration: Duration(
