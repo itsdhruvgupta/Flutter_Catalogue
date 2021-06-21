@@ -78,6 +78,18 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: "Enter Password",
                         labelText: " Password ",
                       ), //decoration
+                      validator: (value) {
+                        if (value.isEmpty) {
+                          return "Plese Enter The Password";
+                        }
+                        if (value.contains(" ")) {
+                          return "Wrong Password ! Enter The Password Again ";
+                        }
+                        if (value.length < 6) {
+                          return "Password  must be more then 6 characters";
+                        }
+                        return null;
+                      },
                     ), //textfield
                     SizedBox(
                       height: 22.0,
