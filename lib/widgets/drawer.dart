@@ -12,7 +12,9 @@ class MyDrawer extends StatelessWidget {
             child: UserAccountsDrawerHeader(
               accountName: Text("Dhruv"),
               accountEmail: Text("dhruvg304@"),
-              currentAccountPicture: Image.network(imageUrl),
+              currentAccountPicture: CircleAvatar(
+                backgroudImage: NetworkImage(imageUr),
+              ),
             ),
           ),
         ],
