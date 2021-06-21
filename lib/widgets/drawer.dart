@@ -5,6 +5,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      color: Colors.white,
       child: Container(
         child: ListView(
           children: [
@@ -20,9 +21,6 @@ class MyDrawer extends StatelessWidget {
                   backgroundImage: NetworkImage(imageUrl),
                 ),
               ),
-            ),
-            const Divider(
-              thickness: 5,
             ),
           ],
         ),
