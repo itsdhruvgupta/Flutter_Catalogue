@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                   ), //box
 
                   Container(
-                    color: Colors.deepPurple,
+                    
                     width: 100,
                     height: 50,
                     alignment: Alignment.center,
@@ -76,6 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(
                         10.0,
+                        color: Colors.deepPurple,
                       ),
                     ),
                   ),
