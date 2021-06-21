@@ -10,6 +10,17 @@ class _LoginPageState extends State<LoginPage> {
   String name = "";
   bool changeButton = false;
 
+  final _formKey = GlobalKey<FormState>();
+
+  //method to go to home
+  moveToHome(BuildContext context) {
+    setState(() {
+      changeButton = true;
+    });
+    await Future.delayed(Duration(seconds: 1));
+    Navigator.pushNamed(context, MyRoutes.homeRoute);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -38,73 +49,70 @@ class _LoginPageState extends State<LoginPage> {
             ), //box
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-              child: Column(
-                children: [
-                  TextFormField(
-                    decoration: const InputDecoration(
-                      hintText: "Enter User Name",
-                      labelText: " User Name ",
-                    ), //decoration
-                    onChanged: (value) {
-                      name = value;
-                      setState(() {});
-                    },
-                  ), //textfield
-                  TextFormField(
-                    obscureText: true,
-                    decoration: const InputDecoration(
-                      hintText: "Enter Password",
-                      labelText: " Password ",
-                    ), //decoration
-                  ), //textfield
-                  SizedBox(
-                    height: 22.0,
-                  ), //box
-
-                  Material(
-                    color: Colors.deepPurple,
-                    borderRadius: BorderRadius.circular(
-                      (changeButton ? 50 : 8),
-                    ),
-                    child: InkWell(
-                      onTap: () async {
-                        setState(() {
-                          changeButton = true;
-                        });
-                        await Future.delayed(Duration(seconds: 1));
-                        Navigator.pushNamed(context, MyRoutes.homeRoute);
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  children: [
+                    TextFormField(
+                      decoration: const InputDecoration(
+                        hintText: "Enter User Name",
+                        labelText: " User Name ",
+                      ), //decoration
+                      onChanged: (value) {
+                        name = value;
+                        setState(() {});
                       },
-                      child: AnimatedContainer(
-                        duration: Duration(
-                          seconds: 1,
-                        ),
-                        width: changeButton ? 50 : 100,
-                        height: 50,
-                        alignment: Alignment.center,
-                        child: changeButton
-                            ? Icon(
-                                Icons.done,
-                                color: Colors.white,
-                              )
-                            : Text(
-                                "Login",
-                                style: TextStyle(
+                    ), //textfield
+                    TextFormField(
+                      obscureText: true,
+                      decoration: const InputDecoration(
+                        hintText: "Enter Password",
+                        labelText: " Password ",
+                      ), //decoration
+                    ), //textfield
+                    SizedBox(
+                      height: 22.0,
+                    ), //box
+
+                    Material(
+                      color: Colors.deepPurple,
+                      borderRadius: BorderRadius.circular(
+                        (changeButton ? 50 : 8),
+                      ),
+                      child: InkWell(
+                        onTap: () => moveToHome(context),
+                        child: AnimatedContainer(
+                          duration: Duration(
+                            seconds: 1,
+                          ),
+                          width: changeButton ? 50 : 100,
+                          height: 50,
+                          alignment: Alignment.center,
+                          child: changeButton
+                              ? Icon(
+                                  Icons.done,
                                   color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                )
+                              : Text(
+                                  "Login",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              ),
+                        ),
                       ),
                     ),
-                  ),
 
-                  // ElevatedButton(
-                  //     child: Text("Login"),
-                  //     style: TextButton.styleFrom(minimumSize: Size(100, 50)),
-                  //     onPressed: () {
-                  //       Navigator.pushNamed(context, MyRoutes.homeRoute);
-                  //     }), //button
-                ], //children
+                    // ElevatedButton(
+                    //     child: Text("Login"),
+                    //     style: TextButton.styleFrom(minimumSize: Size(100, 50)),
+                    //     onPressed: () {
+                    //       Navigator.pushNamed(context, MyRoutes.homeRoute);
+                    //     }), //button
+                  ], //children
+                ),
               ), //column
             ), //padding
           ], //column
