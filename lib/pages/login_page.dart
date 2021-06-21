@@ -74,8 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0)ar(
-
+                      borderRadius: BorderRadius.circular(10.0)
                       ),
                     ),
                   ),
