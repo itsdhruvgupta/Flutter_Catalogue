@@ -61,17 +61,17 @@ class _LoginPageState extends State<LoginPage> {
                   ), //box
 
                   Container(
-                    width: 100 ,
+                    color: Colors.deepPurple,
+                    width: 100,
                     height: 50,
                     child: Text(
                       "Login",
                       style: TextStyle(
                         color: Colors.deepPurple,
-                         fontWeight: FontWeight.bold,
-                         fontSize: 18, 
+                        fontSize: 18,
                       ),
-                      ),
-                    )
+                    ),
+                  )
 
                   // ElevatedButton(
                   //     child: Text("Login"),
