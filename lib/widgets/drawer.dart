@@ -36,7 +36,7 @@ class MyDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(
-                Icons.check_circle,
+                Icons.person,
                 color: Colors.white,
               ),
               title: Text(
