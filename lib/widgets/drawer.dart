@@ -47,6 +47,19 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
+            ListTile(
+              leading: Icon(
+                Icons.mail_outline,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Contact Us",
+                textScaleFactor: 1.3,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ],
         ),
         color: Colors.deepPurple,
