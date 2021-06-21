@@ -13,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   //method to go to home
-  moveToHome(BuildContext context) {
+  moveToHome(BuildContext context) async {
     setState(() {
       changeButton = true;
     });
