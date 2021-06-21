@@ -24,6 +24,11 @@ class MyDrawer extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.home,
+                color: Colors.white,
+              ),
+              title: Title(
+                "Home",
+                color: Colors.white,
               ),
             ),
           ],
