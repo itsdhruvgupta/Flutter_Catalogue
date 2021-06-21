@@ -5,7 +5,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        childern: [
+        children: [
           DrawerHeader(
             child: UserAccountsDrawerHeader(
               accountName: Text("Dhruv"),
