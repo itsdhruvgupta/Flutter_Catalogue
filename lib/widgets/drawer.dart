@@ -34,7 +34,7 @@ class MyDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              onTap: () => moveToHome(context),
+              onTap: () => LoginPage.moveToHome(context),
             ),
             ListTile(
               leading: Icon(
