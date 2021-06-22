@@ -8,7 +8,6 @@ class MyTheme {
         appBarTheme: AppBarTheme(
           color: Colors.deepPurple,
           iconTheme: IconThemeData(color: Colors.white),
-          textTheme: Theme.of(context).textTheme,
         ),
       );
 
