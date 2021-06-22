@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalogue/pages/login_page.dart';
 
 class MyDrawer extends StatelessWidget {
   final imageUrl = "https://pbs.twimg.com/profile_images/1276447283190603776/_tO_paWz_400x400.jpg";
@@ -33,7 +34,7 @@ class MyDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              onTap: Navigator.pushNamed(context, MyRoutes.homeRoute);
+              onTap: () => moveToHome(context),
             ),
             ListTile(
               leading: Icon(
