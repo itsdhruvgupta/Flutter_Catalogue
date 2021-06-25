@@ -12,7 +12,7 @@ class ItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leadind: SizedBox(child: Image.asset(item.image)),
+        leading: SizedBox(child: Image.asset(item.image)),
         title: Text(item.name),
       ),
     );
