@@ -10,7 +10,7 @@ class ItemWidget extends StatelessWidget {
         super(key: key);
 
   Widget build(BuildContext context) {
-    return Card(
+    return const Card(
       // elevation: 0.0,
       onTap: () {
         print("tap on card");
