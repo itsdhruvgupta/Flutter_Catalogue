@@ -16,10 +16,10 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: ListView.builder(
-            itemCount: dmyList.items.length,
+            itemCount: dmyList.length,
             itemBuilder: (context, index) {
               return ItemWidget(
-                item: dmyList.items[index],
+                item: dmyList[index],
               );
             }),
       ),
