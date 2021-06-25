@@ -33,10 +33,6 @@ class Item {
       image: map['image'],
     );
   }
-
-  String toJson() => json.encode(toMap());
-
-  factory Item.fromJson(String source) => Item.fromMap(json.decode(source));
 }
 
 class CatalogModel {
