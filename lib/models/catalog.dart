@@ -9,6 +9,19 @@ class Item {
   final String image;
 
   Item({this.id, this.name, this.desc, this.price, this.color, this.image});
+
+  fromMap() {
+    returnMap<String, dynamic> toMap() {
+      return {
+        'id': id,
+        'name': name,
+        'desc': desc,
+        'price': price,
+        'color': color,
+        'image': image,
+      };
+    }
+  }
 }
 
 class CatalogModel {
@@ -22,17 +35,4 @@ class CatalogModel {
       image: "assets/images/iphone.jpg",
     )
   ];
-
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'name': name,
-      'desc': desc,
-      'price': price,
-      'color': color,
-      'image': image,
-    };
-  }
-
-  
 }
