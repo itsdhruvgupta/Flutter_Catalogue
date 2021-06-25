@@ -11,7 +11,10 @@ class ItemWidget extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Card(
-      elevation: 0.0,
+      // elevation: 0.0,
+      onTap : (){
+        print("tap on card")
+      }
       color: Colors.purple[50],
       child: ListTile(
         leading: Image.network(item.image),
