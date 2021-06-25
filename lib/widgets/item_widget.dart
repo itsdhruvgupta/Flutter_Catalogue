@@ -12,7 +12,7 @@ class ItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0.0,
-      color: Colors.whiteSmoke,
+      color: Colors.HexColor("#eff3f8"),
       child: ListTile(
         leading: Image.network(item.image),
         title: Text(item.name),
