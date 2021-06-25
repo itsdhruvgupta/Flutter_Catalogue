@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catalogue/widgets/drawer.dart';
 import 'package:flutter_catalogue/models/catalog.dart';
 import 'package:flutter_catalogue/widgets/item_widget.dart';
+import 'package:flutter/services.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,6 +10,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  void initState() {
+    super.initState();
+    loadData(); //declaring function
+  }
+
+  loadData() async {
+    final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
+    final decodeData = jsonDecode(catalogJson);
+    var productsData = decodeData["products"];
+    print(prodictsData);
+  }
+
   @override
   Widget build(BuildContext context) {
     final dmyList = List.generate(20, (index) => CatalogModel.items[0]);
