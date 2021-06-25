@@ -18,7 +18,6 @@ class CatalogModel {
       color: "33505a",
       desc: "Iphone 12 pro max sale",
       image: Image.network("https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg"),
-      ]
     )
   ];
 }
