@@ -17,7 +17,7 @@ class CatalogModel {
       price: 21000,
       color: "33505a",
       desc: "Iphone 12 pro max sale",
-      image: Images.asset(
+      image: Image.asset(
         "assets/images/logiphonein.png",
       ),
     )
