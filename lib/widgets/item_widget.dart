@@ -13,7 +13,7 @@ class ItemWidget extends StatelessWidget {
     return Card(
       // elevation: 0.0,
       onTap : (){
-        print("tap on card")
+        print("tap on card");
       }
       color: Colors.purple[50],
       child: ListTile(
