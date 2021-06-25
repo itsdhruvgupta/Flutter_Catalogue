@@ -19,7 +19,7 @@ class ItemWidget extends StatelessWidget {
           print(item.image);
         },
         // leading: Image.network(item.image),
-        leading: Image.asset(item.image),
+        leading: Image.network(item.image),
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text(
