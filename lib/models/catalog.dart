@@ -36,7 +36,7 @@ class Item {
 }
 
 class CatalogModel {
-  static final items = [
+  static final List<Item> items = [
     Item(
       id: 1,
       name: " iphone",
