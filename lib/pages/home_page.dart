@@ -3,6 +3,7 @@ import 'package:flutter_catalogue/widgets/drawer.dart';
 import 'package:flutter_catalogue/models/catalog.dart';
 import 'package:flutter_catalogue/widgets/item_widget.dart';
 import 'package:flutter/services.dart';
+import 'dart:convert';
 
 class HomePage extends StatefulWidget {
   @override
