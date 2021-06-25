@@ -6,6 +6,8 @@ import 'package:flutter_catalogue/widgets/item_widget.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final dmyList = List.generate(20, CatlogModel.items[0]);
+
     int days = 30;
     return Scaffold(
       appBar: AppBar(
@@ -14,10 +16,10 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: ListView.builder(
-            itemCount: CatalogModel.items.length,
+            itemCount: dmyList.items.length,
             itemBuilder: (context, index) {
               return ItemWidget(
-                item: CatalogModel.items[index],
+                item: dmyList.items[index],
               );
             }),
       ),
