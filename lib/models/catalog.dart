@@ -17,9 +17,7 @@ class CatalogModel {
       price: 21000,
       color: "33505a",
       desc: "Iphone 12 pro max sale",
-      image: children <Widget> [
-        Image.asset("assets/images/iphone.png"),
-      ],
+      image: 'asserts/images/iphone.png',
     )
   ];
 }
