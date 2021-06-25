@@ -3,7 +3,12 @@ import 'package:flutter_catalogue/widgets/drawer.dart';
 import 'package:flutter_catalogue/models/catalog.dart';
 import 'package:flutter_catalogue/widgets/item_widget.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final dmyList = List.generate(20, (index) => CatalogModel.items[0]);
@@ -11,7 +16,7 @@ class HomePage extends StatelessWidget {
     int days = 30;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dhruv"),
+        title: Text("Catalouge"),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
