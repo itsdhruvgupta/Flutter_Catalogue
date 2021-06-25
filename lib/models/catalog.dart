@@ -10,6 +10,17 @@ class Item {
 
   Item({this.id, this.name, this.desc, this.price, this.color, this.image});
 
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'name': name,
+      'desc': desc,
+      'price': price,
+      'color': color,
+      'image': image,
+    };
+  }
+
   factory Item.fromMap(Map<String, dynamic> map) {
     if (map == null) return null;
 
@@ -22,6 +33,10 @@ class Item {
       image: map['image'],
     );
   }
+
+  String toJson() => json.encode(toMap());
+
+  factory Item.fromJson(String source) => Item.fromMap(json.decode(source));
 }
 
 class CatalogModel {
