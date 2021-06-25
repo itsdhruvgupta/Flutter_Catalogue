@@ -6,7 +6,7 @@ import 'package:flutter_catalogue/widgets/item_widget.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final dmyList = List.generate(20, CatalogModel.items[0]);
+    final dmyList = List.generate(20, (index) => CatalogModel.items[0]);
 
     int days = 30;
     return Scaffold(
