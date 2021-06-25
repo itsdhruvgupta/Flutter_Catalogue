@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalogue/widgets/drawer.dart';
 import 'package:flutter_catalogue/models/catalog.dart';
+import 'package:flutter_catalogue/widgets/item_widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
