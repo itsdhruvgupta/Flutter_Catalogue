@@ -36,10 +36,10 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: ListView.builder(
-            itemCount: dmyList.length,
+            itemCount: CatalogModel.items.length,
             itemBuilder: (context, index) {
               return ItemWidget(
-                item: dmyList[index],
+                item: CatalogModel.items[index],
               );
             }),
       ),
