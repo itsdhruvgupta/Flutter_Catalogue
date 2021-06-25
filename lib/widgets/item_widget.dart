@@ -1,0 +1,19 @@
+import 'package:meta/meta.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_catalogue/models/catalouge.dart';
+
+class ItemWidget extends StatelessWidget {
+  final Item item;
+
+  const ItemWidget({key key, @required this.item})
+      : assert(item != null),
+        super(key: key);
+  Widget build(BuildContext context) {
+    return Card(
+      child: ListTile(
+        leadind: Image.asset(item.image),
+        title: Text(item.name),
+      ),
+    );
+  }
+}

@@ -1,5 +1,5 @@
 class Item {
-  final String id;
+  final int id;
   final String name;
   final String decs;
   final num price;
@@ -9,15 +9,17 @@ class Item {
   Item({this.id, this.name, this.desc, this.price, this.color, this.image});
 }
 
-final products = [
-  Iten(
-    id: "item1",
-    name: " iphone",
-    price: 21000,
-    color: "33505a",
-    desc: "Iphone 12 pro max sale",
-    image: Image.asset(
-      "assets/images/login.png",
-    ),
-  )
-];
+class CatalogModel {
+  static final items = [
+    Item(
+      id: 1,
+      name: " iphone",
+      price: 21000,
+      color: "33505a",
+      desc: "Iphone 12 pro max sale",
+      image: Image.asset(
+        "assets/images/logiphonein.png",
+      ),
+    )
+  ];
+}
