@@ -12,8 +12,9 @@ class ItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: SizedBox(child: Image.asset(item.image)),
+        leading: Image.network(item.image),
         title: Text(item.name),
+        trailing: Text("90,000"),
       ),
     );
   }
