@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         padding: EdgeInsets.all(7),
                         decoration: BoxDecoration(
-                          color: Colors.purple[150],
+                          color: Colors.purple[100],
                         ),
                       ),
                     ),
