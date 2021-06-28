@@ -44,6 +44,9 @@ class _HomePageState extends State<HomePage> {
                   final item = CatalogModel.items[index];
                   return Card(
                     clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     child: GridTile(
                       child: Image.network(item.image),
                       header: Text(item.name),
