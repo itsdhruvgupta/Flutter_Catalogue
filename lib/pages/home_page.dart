@@ -63,7 +63,18 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.deepOrange,
                         ),
                       ),
-                      footer: Text(item.price.toString()),
+                      footer: Container(
+                        child: Text(
+                          item.price,
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        padding: EdgeInsets.all(7),
+                        decoration: BoxDecoration(
+                          color: Colors.purple(),
+                        ),
+                      ),
                     ),
                   );
                 },
