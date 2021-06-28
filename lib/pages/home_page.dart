@@ -39,6 +39,8 @@ class _HomePageState extends State<HomePage> {
             ? GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
+                  mainAxisSpacing: 16,
+                  crossAxisSpacing: 16,
                 ),
                 itemBuilder: (context, index) {
                   final item = CatalogModel.items[index];
