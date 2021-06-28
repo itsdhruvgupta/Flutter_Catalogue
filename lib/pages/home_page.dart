@@ -43,7 +43,6 @@ class _HomePageState extends State<HomePage> {
                 itemBuilder: (context, index) {
                   final item = CatalogModel.items[index];
                   return Card(
-                    clipBehavior : Clip.antiAlias,
                     GridTile(
                       child: Image.network(item.image),
                       header: Text(item.name),
