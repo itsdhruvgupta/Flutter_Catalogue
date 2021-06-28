@@ -55,9 +55,10 @@ class _HomePageState extends State<HomePage> {
                         child: Text(
                           item.name,
                         ),
+                        padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(
-                            color: Colors.deepOrange,
-                          ),
+                          color: Colors.deepOrange,
+                        ),
                       ),
                       footer: Text(item.price.toString()),
                     ),
