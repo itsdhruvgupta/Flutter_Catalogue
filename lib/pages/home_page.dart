@@ -42,7 +42,11 @@ class _HomePageState extends State<HomePage> {
                 ),
                 itemBuilder: (context, index) {
                   final item = CatalogModel.items[index];
-                  return GridTile(child: Image.network(item.image));
+                  return GridTile(
+                    child: Image.network(item.image),
+                    header: Text(item.name),
+                    footer: Text(item.price),
+                  );
                 },
                 itemCount: CatalogModel.items.length,
               )
