@@ -53,6 +53,9 @@ class _HomePageState extends State<HomePage> {
                       child: Image.network(item.image),
                       header: Container(
                         child: Text(
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                           item.name,
                         ),
                         padding: EdgeInsets.all(7),
