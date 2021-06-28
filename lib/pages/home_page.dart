@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
                   final item = CatalogModel.items[index];
                   return GridTile(child: Image.network(item.image));
                 },
-                itemCount: CatalogModel.items.lenght,
+                itemCount: CatalogModel.items.length,
               )
             : Center(
                 child: CircularProgressIndicator(),
