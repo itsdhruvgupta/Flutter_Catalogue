@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                         child: Text(
                           item.name,
                         ),
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(7),
                         decoration: BoxDecoration(
                           color: Colors.deepOrange,
                         ),
