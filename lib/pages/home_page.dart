@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       footer: Container(
                         child: Text(
-                          item.price,
+                          item.price.toString(),
                           style: TextStyle(
                             color: Colors.white,
                           ),
