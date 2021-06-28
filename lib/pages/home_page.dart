@@ -51,7 +51,12 @@ class _HomePageState extends State<HomePage> {
                     ),
                     child: GridTile(
                       child: Image.network(item.image),
-                      header: Text(item.name),
+                      header: Text(
+                        item.name,
+                        decoration: BoxDecoration(
+                          color: Colors.deepOrange,
+                        ),
+                      ),
                       footer: Text(item.price.toString()),
                     ),
                   );
