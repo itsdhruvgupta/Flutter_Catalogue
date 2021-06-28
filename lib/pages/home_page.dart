@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                   return GridTile(
                     child: Image.network(item.image),
                     header: Text(item.name),
-                    footer: Text(item.price),
+                    footer: Text(item.price.toString()),
                   );
                 },
                 itemCount: CatalogModel.items.length,
