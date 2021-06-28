@@ -36,11 +36,10 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-            ? ListView.builder(
-                itemCount: CatalogModel.items.length,
-                itemBuilder: (context, index) => ItemWidget(
-                  item: CatalogModel.items[index],
-                ),
+            ? GridView.builder(
+                girdDelegate: gridDelegate,
+                itemBuilder: itemBuilder,
+                itemCount: CatalogModel.items.lenght,
               )
             : Center(
                 child: CircularProgressIndicator(),
