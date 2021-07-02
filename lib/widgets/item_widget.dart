@@ -16,7 +16,7 @@ class ItemWidget extends StatelessWidget {
       color: Colors.purple[50],
       child: ListTile(
         onTap: () {
-          print(item.image);
+          print(item.name);
         },
         // leading: Image.network(item.image),
         leading: Image.network(item.image),
